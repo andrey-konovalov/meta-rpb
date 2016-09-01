@@ -3,6 +3,8 @@ require rpb-weston-image.bb
 CORE_IMAGE_BASE_INSTALL_remove = "weston-init"
 
 CORE_IMAGE_BASE_INSTALL += " \
+    libdrm \
+    libdrm-tests \
     weston-cfg-systemd \
     packagegroup-gstreamer1-0 \
     tiff \
